@@ -1,0 +1,13 @@
+node_modules/
+npm-debug.log*
+.env
+.env.local
+coverage/
+.nyc_output/
+test-results.xml
+build/
+dist/
+.vscode/
+.idea/
+.DS_Store
+build-report.txt
