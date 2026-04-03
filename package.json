@@ -1,0 +1,30 @@
+{
+  "name": "jenkins-demo-app",
+  "version": "1.0.0",
+  "description": "Node.js application for Jenkins to GitHub Actions migration",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest --coverage --testPathIgnorePatterns=/node_modules/",
+    "lint": "eslint .",
+    "build": "npm run lint && npm run test",
+    "security-check": "npm audit"
+  },
+  "keywords": ["jenkins", "github-actions", "migration"],
+  "author": "DevTools",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.40.0",
+    "nodemon": "^2.0.20",
+    "@jest/globals": "^29.5.0"
+  }
+}
